@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Ivan_GroupSwitcher>
+			<version>1.0.0</version>
+		</Ivan_GroupSwitcher>
+	</modules>
+	<global>
+		<helpers>
+			<groupswitcher>
+				<class>Ivan_GroupSwitcher_Helper</class>
+			</groupswitcher>
+		</helpers>
+		<blocks>
+			<groupswitcher>
+				<class>Ivan_GroupSwitcher_Block</class>		
+			</groupswitcher>	
+		</blocks>
+		<models>
+			<groupswitcher>
+				<class>Ivan_GroupSwitcher_Model</class>
+				<resourceModel>groupswitcher_mysql4</resourceModel>
+			</groupswitcher>
+		</models>
+    </global>
+	<adminhtml>
+		<events>
+            <sales_order_invoice_pay>
+                <observers>
+                    <groupswitcher>
+                    	<type>singleton</type>
+                        <class>groupswitcher/observer</class>
+                        <method>switcherCustomer</method>
+                    </groupswitcher>
+                </observers>
+            </sales_order_invoice_pay>
+		</events>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<groupswitcher_options translate="title" module="groupswitcher">
+											<title>Ivan Group Switch Rules</title>
+										</groupswitcher_options>
+									</children>
+								</config>
+
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</adminhtml>
+</config>

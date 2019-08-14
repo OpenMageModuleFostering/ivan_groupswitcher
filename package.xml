@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+    <name>Ivan_GroupSwitcher</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>According to the user history orders automatically upgrade user group</summary>
+    <description>According to the user history orders automatically upgrade user group</description>
+    <notes>No change the database and any core file will not have influence program&#xD;
+</notes>
+    <authors><author><name>Ivan Zhu</name><user>zlladmin</user><email>13652362259@139.com</email></author></authors>
+    <date>2013-04-15</date>
+    <time>03:47:37</time>
+    <contents><target name="magecommunity"><dir name="Ivan"><dir name="GroupSwitcher"><dir name="Helper"><file name="Data.php" hash="d80f3740ff6b95715282d7a9dc74e905"/></dir><dir name="Model"><file name="Observer.php" hash="ecd4d2a8a4cfa31b7bb3464c06538961"/></dir><dir name="etc"><file name="config.xml" hash="723b178f2f65978bf3629e1b27b747b6"/><file name="system.xml" hash="761ae57697f912722dcc6fc281b094b1"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Ivan_GroupSwitcher.xml" hash="5d598e057a9363ce7da9adf84c709fea"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>5.4.7</max></php></required></dependencies>
+</package>
