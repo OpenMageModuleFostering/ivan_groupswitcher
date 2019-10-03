@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Ivan_GroupSwitcher",
+    "name": "OpenMageModuleFostering\/Ivan_GroupSwitcher",
     "type": "magento-module",
     "license": "Open-Software-License",
     "homepage": "",
     "description": "According to the user history orders automatically upgrade user group",
     "authors": [
-    {
-        "name": "Ivan Zhu",
-        "email": "13652362259@139.com"
-    }
-],
+        {
+            "name": "Ivan Zhu",
+            "email": "13652362259@139.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
