@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Ivan_GroupSwitcher",
+    "name": "openmage-module-fostering\/ivan_groupswitcher",
     "type": "magento-module",
-    "license": "Open-Software-License",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "According to the user history orders automatically upgrade user group",
     "authors": [
